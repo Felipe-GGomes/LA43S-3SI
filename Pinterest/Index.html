@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Pinterest</title>
+</head>
+
+<body>
+    <!-- Tarefa de casa ajustar o menu para ficar do tamanho certo e tals-->
+    <aside class="sidebar">
+        <!--Logo-->
+        <a class="logo-top" href="">
+            <h1 class="image-p">P</h1>
+            <h2 class="P-name">Pinterest</h2>
+        </a>
+        <!--MENU-->
+        <nav class="menu">
+            <ul>
+                <li><a class="active" href="Index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Explorar</a></li>
+                <li><a href="#"><i class="fa-solid fa-plus"></i>Criados</a></li>
+            </ul>
+            <a href="#"><i class="fa-solid fa-plus"></i>Criar</a>
+        </nav>
+
+        <!--Perfil-->
+        <div class="profile">
+            <h1 class="image">F</h1>
+            <div>
+                <h2 class="profile-name">Felipe</h2>
+                <h2 class="profile-text">Seu Perfil</h2>
+            </div>
+        </div>
+    </aside>
+
+    <header class="top_bar">
+        <div class="search_box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" class="search_box_input" placeholder="Pesquisar">
+        </div>
+
+        <div class="top_bar_buttons">
+            <button><i class="fa-solid fa-message" data-tooltip="Mensagens"></i></button>
+            <button><i class="fa-solid fa-camera" data-tooltip="Câmera"></i></button>
+            <button><i class="fa-solid fa-user" data-tooltip="Perfil"></i></button>
+        </div>
+    </header>
+
+    <main class="main_content">
+        <div class="main_content_title">
+            <h1>Inspirações</h1>
+        </div>
+        <!--card 1-->
+        <div class="main_content_grid">
+            <article class="main_content_card">
+                <img src="https://loremflickr.com/500/700/interior" alt="Inspiração" title="Decoracao personalizada">
+                <button class="save-button" aria-label="Salvar">Salvar</button>
+                <div class="card_info">
+                    <h1 class="card_title">Decoracao de interiores</h1>
+                    <p class="card_category">casa e decoração</p>
+                </div>
+            </article>
+            <!-- CARD 2 -->
+            <article class="main_content_card">
+                <img src="https://loremflickr.com/500/600/fashion" alt="Moda feminina">
+                <button class="save-button" aria-label="Salvar">Salvar</button>
+                <div class="card_info">
+                    <div class="card_title"> Moda feminina</div>
+                    <div class="card_category"> Moda</div>
+                </div>
+            </article>
+            <!-- CARD 3 -->
+            <article class="main_content_card">
+                <img src="https://loremflickr.com/500/750/food" alt="Receitas">
+                <button class="save-button" aria-label="Salvar">Salvar</button>
+                <div class="card_info">
+                    <div class="card_title">Receitas fáceis</div>
+                    <div class="card_category"> Receitas</div>
+                </div>
+            </article>
+            <!-- CARD 4 -->
+            <article class="main_content_card">
+                <img src="https://loremflickr.com/500/500/garden" alt="Jardim">
+                <button class="save-button" aria-label="Salvar">Salvar</button>
+                <div class="card_info">
+                    <div class="card_title">Ideias para jardim</div>
+                    <div class="card_category"> Jardim</div>
+                </div>
+            </article>
+
+            <!-- CARD 5 -->
+            <article class="main_content_card" data-title="Arquitetura moderna" data-category="arquitetura casa design">
+                <img src="https://loremflickr.com/500/800/architecture" alt="Arquitetura moderna">
+                <button class="save-button">Salvar</button>
+                <div class="card_info">
+                    <div class="card_title">Arquitetura moderna</div>
+                    <div class="card_category">Arquitetura</div>
+                </div>
+            </article>
+
+            <!-- CARD 6 -->
+            <article class="main_content_card" data-title="Cozinha planejada" data-category="cozinha casa decoração">
+                <img src="https://loremflickr.com/500/650/kitchen" alt="Cozinha planejada">
+                <button class="save-button">Salvar</button>
+                <div class="card_info">
+                    <div class="card_title">Cozinha planejada</div>
+                    <div class="card_category">Casa</div>
+                </div>
+            </article>
+
+            <!-- CARD 7 -->
+            <article class="main_content_card" data-title="Viagem e turismo" data-category="viagem turismo férias">
+                <img src="https://loremflickr.com/500/720/travel" alt="Viagem">
+                <button class="save-button">Salvar</button>
+                <div class="card_info">
+                    <div class="card_title"> Viagem e turismo </div>
+                    <div class="card_category">Viagens</div>
+                </div>
+            </article>
+
+            <!-- CARD 8 -->
+            <article class="main_content_card" data-title="Quarto aconchegante" data-category="quarto decoração casa">
+                <img src="https://loremflickr.com/500/550/bedroom" alt="Quarto">
+                <button class="save-button"> Salvar</button>
+                <div class="card_info">
+                    <div class="card_title"> Quarto aconchegante</div>
+                    <div class="card_category">Decoração</div>
+                </div>
+            </article>
+
+            <!-- CARD 9 -->
+            <article class="main_content_card" data-title="Look casual" data-category="moda roupas look">
+                <img src="https://loremflickr.com/500/680/casual" alt="Look casual">
+                <button class="save-button"> Salvar</button>
+                <div class="card_info">
+                    <div class="card_title">Look casual </div>
+                    <div class="card_category">Moda </div>
+                </div>
+            </article>
+
+            <!-- CARD 10 -->
+            <article class="main_content_card" data-title="Plantas para casa"
+                data-category="plantas natureza casa jardim">
+                <img src="https://loremflickr.com/500/600/plants" alt="Plantas">
+                <button class="save-button"> Salvar</button>
+                <div class="card_info">
+                    <div class="card_title">Plantas para casa</div>
+                    <div class="card_category"> Plantas</div>
+                </div>
+            </article>
+
+            <!-- CARD 11 -->
+            <article class="main_content_card" data-title="Café da manhã" data-category="comida receitas cozinha café">
+                <img src="https://loremflickr.com/500/700/breakfast" alt="Café da manhã">
+                <button class="save-button"> Salvar</button>
+                <div class="card_info">
+                    <div class="card_title"> Café da manhã</div>
+                    <div class="card_category">Receitas </div>
+                </div>
+            </article>
+
+            <!-- CARD 12 -->
+
+            <article class="main_content_card" data-title="Sala moderna" data-category="sala decoração casa design">
+                <img src="https://loremflickr.com/500/580/livingroom" alt="Sala moderna">
+                <button class="save-button"> Salvar</button>
+                <div class="card_info">
+                    <div class="card_title"> Sala moderna</div>
+                    <div class="card_category">Decoração</div>
+                </div>
+            </article>
+        </div>
+
+        <!-- ===== Seção de Depoimentos ===== -->
+        <section class="depositions">
+            <div class="depositions-header">
+                <h1>Depoimentos</h1>
+                <p>Confira a experiência de nossos usuários e como o Pinterest tem inspirado suas vidas. Desde ideias
+                    de decoração até receitas deliciosas, nossos usuários compartilham suas histórias e descobertas.
+                    Explore os depoimentos e veja como o Pinterest pode transformar sua criatividade em realidade.</p>
+            </div>
+            <div class="card-depositions">
+                <!--Card 1-->
+                <article class="content-depositions">
+                    <div class="quote-icon">
+                        <p>“</p>
+                    </div>
+                    <div class="avatar">
+                        <img src="https://i.pravatar.cc/150?img=14" alt="Foto de Mariana Silva">
+                    </div>
+                    <div class="deposition-info">
+                        <h3 class="deposition-name">Mariana Silva</h3>
+                        <p class="deposition-role">Usuária da plataforma</p>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>O Pinterest virou meu app favorito para organizar ideias de decoração. Encontro inspiração
+                        nova todos os dias.</p>
+                </article>
+
+                <!--Card 2-->
+                <article class="content-depositions">
+                    <div class="quote-icon">
+                        <p>“</p>
+                    </div>
+                    <div class="avatar">
+                        <img src="https://i.pravatar.cc/150?img=43" alt="Foto de Rafael Costa">
+                    </div>
+                    <div class="deposition-info">
+                        <h3 class="deposition-name">Rafael Costa</h3>
+                        <p class="deposition-role">Criador de conteúdo</p>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Uso o Pinterest para guardar referências dos meus projetos de design. Muito mais prático do
+                        que salvar prints soltos.</p>
+                </article>
+
+                <!--Card 3-->
+                <article class="content-depositions">
+                    <div class="quote-icon">
+                        <p>“</p>
+                    </div>
+                    <div class="avatar">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Foto de Beatriz Oliveira">
+                    </div>
+                    <div class="deposition-info">
+                        <h3 class="deposition-name">Beatriz Oliveira</h3>
+                        <p class="deposition-role">Designer</p>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>As pastas de inspiração me ajudam bastante no dia a dia do trabalho. Recomendo para qualquer
+                        pessoa criativa.</p>
+                </article>
+
+                <!--Card 4-->
+                <article class="content-depositions">
+                    <div class="quote-icon">
+                        <p>“</p>
+                    </div>
+                    <div class="avatar">
+                        <img src="https://i.pravatar.cc/150?img=8" alt="Foto de Lucas Andrade">
+                    </div>
+                    <div class="deposition-info">
+                        <h3 class="deposition-name">Lucas Andrade</h3>
+                        <p class="deposition-role">Usuário da plataforma</p>
+                    </div>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Perfeito para achar receitas novas e ideias de jardinagem. É a ferramenta que mais uso no
+                        celular.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>
