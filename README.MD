@@ -1,4 +1,7 @@
-# Este Repositorio acompanha as aulas da matéria 
-> LA43S-3SI
+# Este Repositorio acompanha as aulas/projeto da matéria 
+---
+> Matéria       : LA43S-3SI
+> Universidade  : UTFPR
+> Campus        : Pato Branco
 
-- Felipe
+- Aluno: Felipe Gabriel Gomes
