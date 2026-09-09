@@ -436,41 +436,37 @@ body {
     list-style: none;
 }
 
-/*-- ANOTAÇÕES NUMERO 1
-arrumar a porra desses icones
-deixar o background do body cinza
-Arrumar sombreamento
-também tem que arrumar o botão de salvar do primeiro card, que não está aparecendo
-variaveis de cores, fontes, etc.
-subir barra pinterest para o tpo
-tentar desenvolver modo noturno
+/*-- PENDÊNCIAS
 
+ORDEM DO FIM DE SEMANA:
 
-estudar um pouco mais a fundo e tentar construir um projeto simples onde tem varios blocos mostrando imagens aleatorias
-com todos os elementos que aprendemos até agora, como sidebar, topbar, cards, etc.
-nao posso reprovar nas proximas aulas, então vou me esforçar mais*/
+1) Nomenclatura -> padronizar tudo pro kebab-case da prof (card, card-info,
+   topbar, search-box...), trocando CSS e HTML juntos, classe por classe.
+   Aproveitar pra corrigir o bug do class="P-name" (maiúsculo) no HTML vs
+   .p-name (minúsculo) no CSS -> nunca bateu, o "Pinterest" do logo nunca
+   pegou o font-size certo.
 
-/*-- ANOTAÇÕES NUMERO 2
+2) Grid -> trocar .main_content_grid de columns:4 pra display:grid +
+   grid-template-columns: repeat(4, 1fr), igual a da prof. Perde a cascata
+   tipo masonry que eu tinha, mas ganha consistência com o material da aula
+   pra mexer em media query depois. Código já pronto (Claude já deu), só
+   colar. Já vem com o rgba(0,0,20%) corrigido pra rgba(0,0,0,0.2) junto
+   (bug de sintaxe que tirava a sombra dos cards do grid principal).
 
-organizar nomenclatura das classes do footer (hoje tá misturado: footer_principal,
-footer-content, Footer_Concent, footer_copyright) -> escolher um padrão só (kebab-case)
-e trocar em todo lugar, CSS e HTML juntos
+3) Responsividade -> media queries pra vários tamanhos. Ficar de olho no
+   que tá fixo hoje: sidebar 240px, o grid de 4 colunas (que vira grid de
+   verdade no item 2) -> tudo isso vai precisar de breakpoint.
 
-apagar o .footer_principal{} que ta vazio, não faz nada
+4) Variáveis de cor -> já existe --text-color e --bg-color no :root, só
+   falta trocar os hardcoded pelos var() de verdade em todo o arquivo.
+   Aproveitar pra aplicar --bg-color no body/.main_content, que hoje não
+   tem fundo nenhum (a prof tem background-color:#f1f1f1 no .content dela,
+   eu não tenho equivalente ainda).
 
-corrigir o rgba(0, 0, 20%) do .main_content_card -> só tem 3 valores, sintaxe invalida,
-por isso os cards do grid principal nao tem sombra nenhuma hoje
+5) Botão modo noturno -> só criar o botão/estrutura, não precisa funcionar
+   ainda.
 
-resolver o resto da lista antiga que ainda ta pendente:
-- sombreamento (ligado ao bug do rgba ai de cima)
-- botão de salvar do card 1 que não aparece
-- variaveis de cor e fonte (usar var(--text-color) e var(--bg-color) onde já tem hardcoded)
-- arrumar os icones
-- bg do body cinza
-- subir a barra do pinterest pro topo
-- modo noturno
-
-próxima aula é responsividade -> vale já ir prestando atenção no que está fixo
-(sidebar 240px, grid-template-columns fixo, columns:4) pra saber o que vai
-precisar de media query depois
+OUTRAS PENDÊNCIAS (fora da ordem de cima):
+- falta align-items: center no .top_bar (a prof tem isso no .topbar dela)
+- arrumar os ícones
 */
