@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-:root{
+:root {
     --text-color: #0a0a0a;
     --bg-color: #f1f1f1;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Oswald", sans-serif;
 
 }
 
-.sidebar{
-    border-right: 1px solid #9e9e9e; 
+.sidebar {
+    border-right: 1px solid #9e9e9e;
     width: 240px;
     height: 100vh;
     padding: 18px 12px;
@@ -25,7 +25,7 @@ body{
     z-index: 200;
 }
 
-.menu a{
+.menu a {
     padding: 10px;
     color: #0a0a0a;
     font-size: 15px;
@@ -35,26 +35,26 @@ body{
     display: block;
 }
 
-.menu i{
+.menu i {
     padding-right: 10px;
 }
 
-.menu a:hover{
+.menu a:hover {
     background-color: rgb(216, 215, 215);
 }
 
-.menu li{
+.menu li {
     width: 100%;
     list-style: none;
     padding: 5px 10px;
 }
 
-.menu a.active{
+.menu a.active {
     background-color: #111111;
     color: white;
 }
 
-.menu > a{
+.menu>a {
     background-color: #f1f1f1;
     width: calc(100% - 10px);
     border-radius: 6px;
@@ -65,28 +65,28 @@ body{
 
 
 
-.profile{
+.profile {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    position:fixed;
+    position: fixed;
     bottom: 10px;
 }
 
-.profile-text{
+.profile-text {
     margin-top: 3px;
     font-size: 12px;
     color: #2d2d2d;
     font-weight: 100;
 }
 
-.profile-name{
+.profile-name {
     font-size: 16px;
 }
 
-.image{
+.image {
     width: 40px;
     height: 40px;
     background-color: pink;
@@ -97,8 +97,8 @@ body{
     align-items: center;
 }
 
-.logo-top{
-    display:flex;
+.logo-top {
+    display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 10px;
@@ -106,7 +106,7 @@ body{
     padding-left: 10px;
 }
 
-.image-p{
+.image-p {
     width: 40px;
     height: 40px;
     background-color: red;
@@ -118,11 +118,11 @@ body{
     align-items: center;
 }
 
-.p-name{
+.p-name {
     font-size: 15px;
 }
 
-.top_bar{
+.top_bar {
     position: fixed;
     top: 0;
     left: 240px;
@@ -134,7 +134,8 @@ body{
     z-index: 200;
     background-color: #fff;
 }
-.search_box{
+
+.search_box {
     display: flex;
     align-items: center;
     height: 40px;
@@ -144,7 +145,7 @@ body{
     background-color: #f1e1f1;
 }
 
-.search_box_input{
+.search_box_input {
     border: none;
     background-color: transparent;
     width: 100%;
@@ -153,17 +154,17 @@ body{
     outline: none;
 }
 
-.search_box i{
+.search_box i {
     margin: 12px;
 }
 
-.top_bar_buttons{
+.top_bar_buttons {
     display: flex;
     gap: 10px;
-    
+
 }
 
-.top_bar_buttons button{
+.top_bar_buttons button {
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -176,33 +177,33 @@ body{
     transition: background-color 0.2s ease;
 }
 
-.top_bar_buttons button:hover{
+.top_bar_buttons button:hover {
     background-color: rgb(216, 215, 215);
 }
 
-.top_bar_buttons i{
+.top_bar_buttons i {
     position: relative;
     font-size: 16px;
 }
 
-.main_content{
+.main_content {
     margin-left: 240px;
     padding-top: 60px;
     /* margin-top: 60px; */
 }
 
-.main_content_title{
+.main_content_title {
     padding: 0 24px;
     margin-bottom: 16px;
 }
 
-.main_content_grid{
+.main_content_grid {
     columns: 4;
     column-gap: 16px;
     padding: 0 24px 24px;
 }
 
-.main_content_card{
+.main_content_card {
     break-inside: avoid;
     margin-bottom: 16px;
     position: relative;
@@ -215,18 +216,18 @@ body{
     box-shadow: 2px 2px 4px rgba(0, 0, 20%);
 }
 
-.main_content_card:hover{
+.main_content_card:hover {
     transform: scale(1.025);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.main_content_card img{
+.main_content_card img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.save-button{
+.save-button {
     position: absolute;
     top: 12px;
     right: 12px;
@@ -245,27 +246,27 @@ body{
 }
 
 
-.main_content_card:hover .save-button{
+.main_content_card:hover .save-button {
     opacity: 1;
 }
 
-.card_info{
+.card_info {
     padding: 12px 4px 4px;
     background-color: white;
 }
 
-.card_title{
+.card_title {
     font-size: 15px;
     font-weight: 600;
 }
 
-.card_category{
+.card_category {
     font-size: 12px;
     margin-top: 4px;
     color: #9e9e9e;
 }
 
-.top_bar_buttons i::after{
+.top_bar_buttons i::after {
     content: attr(data-tooltip);
     position: absolute;
     top: 32px;
@@ -282,36 +283,36 @@ body{
     transition: opacity 0.3s ease;
 }
 
-.top_bar_buttons button:hover i::after{
+.top_bar_buttons button:hover i::after {
     opacity: 1;
 }
 
 /* ===== Seção de Depoimentos ===== */
 
-.depositions{
+.depositions {
     background-color: #f1f1f1;
     padding: 30px;
 }
 
-.depositions-header{
+.depositions-header {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.depositions-header h1{
+.depositions-header h1 {
     font-size: 28px;
     font-weight: 700;
     color: #0a0a0a;
 }
 
-.depositions-header p{
+.depositions-header p {
     font-size: 16px;
     color: #9e9e9e;
     max-width: 600px;
     margin: 8px auto 0;
 }
 
-.card-depositions{
+.card-depositions {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.5rem;
@@ -319,7 +320,7 @@ body{
     margin: 0 auto;
 }
 
-.content-depositions{
+.content-depositions {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -335,12 +336,12 @@ body{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.content-depositions:hover{
+.content-depositions:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.quote-icon{
+.quote-icon {
     position: absolute;
     top: 12px;
     right: 16px;
@@ -349,7 +350,7 @@ body{
     opacity: 0.2;
 }
 
-.avatar img{
+.avatar img {
     width: 78px;
     height: 78px;
     border-radius: 50%;
@@ -359,19 +360,19 @@ body{
     margin-bottom: 16px;
 }
 
-.deposition-info h3{
+.deposition-info h3 {
     font-size: 16px;
     font-weight: 700;
     color: #0a0a0a;
 }
 
-.deposition-info .deposition-role{
+.deposition-info .deposition-role {
     font-size: 13px;
     color: #9e9e9e;
     margin-top: 4px;
 }
 
-.stars{
+.stars {
     display: flex;
     justify-content: center;
     gap: 4px;
@@ -380,11 +381,11 @@ body{
     transition: transform 0.3s ease;
 }
 
-.content-depositions:hover .stars{
+.content-depositions:hover .stars {
     transform: scale(1.1);
 }
 
-.content-depositions > p{
+.content-depositions>p {
     font-size: 13px;
     color: #6b6b6b;
     line-height: 1.6;
@@ -392,19 +393,41 @@ body{
 }
 
 
+.footer_copyright{
+    background-color: #181818;
+    text-align: center;
+} 
+.Footer_Conheca{
+    flex: 1;
+}  
+.Footer_nossoParceiro{
+    flex: 1;
+} 
+.Footer_Concent{
+    flex: 2;
+} 
 
+.footer_principal{
+}
 
+.footer-content{
+    display: flex;
+    background-color: #363636;
+    padding: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.footer-content a{
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+    padding: 2px 0;
+}
+.Footer_nossoParceiro ul{
+    list-style: none;
+}
+.Footer_Conheca ul{
+    list-style: none;
+}
 
 /*-- tarefa de casa
 arrumar a porra desses icones
