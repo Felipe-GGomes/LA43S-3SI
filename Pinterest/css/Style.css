@@ -396,6 +396,7 @@ body {
 .footer_copyright{
     background-color: #181818;
     text-align: center;
+    color: white;
 } 
 .Footer_Conheca{
     flex: 1;
@@ -407,8 +408,14 @@ body {
     flex: 2;
 } 
 
-.footer_principal{
+.footer-content h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    margin-bottom: 8px;
 }
+
+/*.footer_principal{desnecessario no momento}*/
 
 .footer-content{
     display: flex;
@@ -429,7 +436,7 @@ body {
     list-style: none;
 }
 
-/*-- tarefa de casa
+/*-- ANOTAÇÕES NUMERO 1
 arrumar a porra desses icones
 deixar o background do body cinza
 Arrumar sombreamento
@@ -442,3 +449,28 @@ tentar desenvolver modo noturno
 estudar um pouco mais a fundo e tentar construir um projeto simples onde tem varios blocos mostrando imagens aleatorias
 com todos os elementos que aprendemos até agora, como sidebar, topbar, cards, etc.
 nao posso reprovar nas proximas aulas, então vou me esforçar mais*/
+
+/*-- ANOTAÇÕES NUMERO 2
+
+organizar nomenclatura das classes do footer (hoje tá misturado: footer_principal,
+footer-content, Footer_Concent, footer_copyright) -> escolher um padrão só (kebab-case)
+e trocar em todo lugar, CSS e HTML juntos
+
+apagar o .footer_principal{} que ta vazio, não faz nada
+
+corrigir o rgba(0, 0, 20%) do .main_content_card -> só tem 3 valores, sintaxe invalida,
+por isso os cards do grid principal nao tem sombra nenhuma hoje
+
+resolver o resto da lista antiga que ainda ta pendente:
+- sombreamento (ligado ao bug do rgba ai de cima)
+- botão de salvar do card 1 que não aparece
+- variaveis de cor e fonte (usar var(--text-color) e var(--bg-color) onde já tem hardcoded)
+- arrumar os icones
+- bg do body cinza
+- subir a barra do pinterest pro topo
+- modo noturno
+
+próxima aula é responsividade -> vale já ir prestando atenção no que está fixo
+(sidebar 240px, grid-template-columns fixo, columns:4) pra saber o que vai
+precisar de media query depois
+*/
