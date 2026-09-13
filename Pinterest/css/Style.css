@@ -86,7 +86,7 @@ body {
     font-size: 16px;
 }
 
-.image {
+.profile-image {
     width: 40px;
     height: 40px;
     background-color: pink;
@@ -97,7 +97,7 @@ body {
     align-items: center;
 }
 
-.logo-top {
+.logo {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -118,11 +118,11 @@ body {
     align-items: center;
 }
 
-.p-name {
+.logo-text {
     font-size: 15px;
 }
 
-.top_bar {
+.topbar {
     position: fixed;
     top: 0;
     left: 240px;
@@ -135,7 +135,7 @@ body {
     background-color: #fff;
 }
 
-.search_box {
+.search-box {
     display: flex;
     align-items: center;
     height: 40px;
@@ -145,7 +145,7 @@ body {
     background-color: #f1e1f1;
 }
 
-.search_box_input {
+.search-input {
     border: none;
     background-color: transparent;
     width: 100%;
@@ -154,17 +154,17 @@ body {
     outline: none;
 }
 
-.search_box i {
+.search-box i {
     margin: 12px;
 }
 
-.top_bar_buttons {
+.topbar-actions {
     display: flex;
     gap: 10px;
 
 }
 
-.top_bar_buttons button {
+.topbar-actions button {
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -177,51 +177,48 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.top_bar_buttons button:hover {
+.topbar-actions button:hover {
     background-color: rgb(216, 215, 215);
 }
 
-.top_bar_buttons i {
+.topbar-actions i {
     position: relative;
     font-size: 16px;
 }
 
-.main_content {
+.content {
     margin-left: 240px;
     padding-top: 60px;
     /* margin-top: 60px; */
 }
 
-.main_content_title {
+.content-header {
     padding: 0 24px;
     margin-bottom: 16px;
 }
 
-.main_content_grid {
-    columns: 4;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 16px;
     padding: 0 24px 24px;
 }
 
-.main_content_card {
-    break-inside: avoid;
-    margin-bottom: 16px;
+.card{
     position: relative;
     border-radius: 12px;
     overflow: hidden;
     background-color: white;
-    display: inline-block;
-    width: 100%;
     transition: transform 0.5s ease;
-    box-shadow: 2px 2px 4px rgba(0, 0, 20%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.main_content_card:hover {
+.card:hover {
     transform: scale(1.025);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.main_content_card img {
+.card img {
     width: 100%;
     height: auto;
     display: block;
@@ -246,27 +243,27 @@ body {
 }
 
 
-.main_content_card:hover .save-button {
+.card:hover .save-button {
     opacity: 1;
 }
 
-.card_info {
+.card-info {
     padding: 12px 4px 4px;
     background-color: white;
 }
 
-.card_title {
+.card-title {
     font-size: 15px;
     font-weight: 600;
 }
 
-.card_category {
+.card-category {
     font-size: 12px;
     margin-top: 4px;
     color: #9e9e9e;
 }
 
-.top_bar_buttons i::after {
+.topbar-actions i::after {
     content: attr(data-tooltip);
     position: absolute;
     top: 32px;
@@ -283,7 +280,7 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.top_bar_buttons button:hover i::after {
+.topbar-actions button:hover i::after {
     opacity: 1;
 }
 
@@ -392,19 +389,18 @@ body {
     margin-top: 8px;
 }
 
-
-.footer_copyright{
+.footer-copyright{
     background-color: #181818;
     text-align: center;
     color: white;
 } 
-.Footer_Conheca{
+.footer-company{
     flex: 1;
 }  
-.Footer_nossoParceiro{
+.footer-partners{
     flex: 1;
 } 
-.Footer_Concent{
+.footer-about{
     flex: 2;
 } 
 
@@ -414,8 +410,6 @@ body {
     color: #f1f1f1;
     margin-bottom: 8px;
 }
-
-/*.footer_principal{desnecessario no momento}*/
 
 .footer-content{
     display: flex;
@@ -429,10 +423,10 @@ body {
     font-size: 12px;
     padding: 2px 0;
 }
-.Footer_nossoParceiro ul{
+.footer-partners ul{
     list-style: none;
 }
-.Footer_Conheca ul{
+.footer-company ul{
     list-style: none;
 }
 
@@ -440,13 +434,12 @@ body {
 
 ORDEM DO FIM DE SEMANA:
 
-1) Nomenclatura -> padronizar tudo pro kebab-case da prof (card, card-info,
-   topbar, search-box...), trocando CSS e HTML juntos, classe por classe.
-   Aproveitar pra corrigir o bug do class="P-name" (maiúsculo) no HTML vs
-   .p-name (minúsculo) no CSS -> nunca bateu, o "Pinterest" do logo nunca
-   pegou o font-size certo.
+1) [OK] Nomenclatura -> tudo padronizado em kebab-case, igual a da prof
+   (card, card-info, topbar, search-box, logo, profile-image...). Bug do
+   class="P-name" (maiúsculo) vs .p-name (minúsculo) resolvido junto -> a
+   classe agora é .logo-text nos dois lugares.
 
-2) Grid -> trocar .main_content_grid de columns:4 pra display:grid +
+2) Grid -> trocar .grid de columns:4 pra display:grid +
    grid-template-columns: repeat(4, 1fr), igual a da prof. Perde a cascata
    tipo masonry que eu tinha, mas ganha consistência com o material da aula
    pra mexer em media query depois. Código já pronto (Claude já deu), só
@@ -459,14 +452,16 @@ ORDEM DO FIM DE SEMANA:
 
 4) Variáveis de cor -> já existe --text-color e --bg-color no :root, só
    falta trocar os hardcoded pelos var() de verdade em todo o arquivo.
-   Aproveitar pra aplicar --bg-color no body/.main_content, que hoje não
+   Aproveitar pra aplicar --bg-color no body/.content, que hoje não
    tem fundo nenhum (a prof tem background-color:#f1f1f1 no .content dela,
    eu não tenho equivalente ainda).
 
 5) Botão modo noturno -> só criar o botão/estrutura, não precisa funcionar
-   ainda.
+   ainda. Pista da prof: ela já criou --text-dark e --bg-dark no :root dela
+   -> parece que a lógica é ter um segundo par de variáveis "dark" que
+   entra em ação quando o modo escuro liga.
 
 OUTRAS PENDÊNCIAS (fora da ordem de cima):
-- falta align-items: center no .top_bar (a prof tem isso no .topbar dela)
+- falta align-items: center no .topbar (a prof tem isso no .topbar dela)
 - arrumar os ícones
 */
