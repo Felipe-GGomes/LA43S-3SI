@@ -1,21 +1,77 @@
-@media(max-width: 1100px){
-    .main_content_grid{
-        columns: 3;
+/* ===== Até 1200px: grid principal e depoimentos em 3 colunas ===== */
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-depositions {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
-@media (min-width: 600px) and (max-width: 900px){
-    .sidebar{
+/* ===== Até 900px: grids em 2 colunas + sidebar retraído (só ícones) ===== */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-depositions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sidebar {
         width: 80px;
-        padding: 18px, 10px;
+        padding: 18px 10px;
     }
 
-    .logo{
+    .topbar {
+        left: 80px;
+    }
+
+    .content {
+        margin-left: 80px;
+    }
+
+    .logo {
         justify-content: center;
-
     }
-    .logo h2{
+
+    .logo-text {
+        display: none;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .menu i {
+        padding-right: 0;
+    }
+
+    .menu span {
+        display: none;
+    }
+
+    .profile > div {
         display: none;
     }
 }
 
+/* ===== Até 600px: 1 coluna + esconde os botões da direita do topbar ===== */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-depositions {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .topbar-actions {
+        display: none;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
