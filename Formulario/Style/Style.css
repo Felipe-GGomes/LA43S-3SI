@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,9 +10,10 @@ body{
 }
 
 input, select, textarea{
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width:100%
 }
 label{
     font-weight: bold;
@@ -42,4 +44,27 @@ form{
 
 .form-group-3{
     flex: 1 1 30%;
+}
+
+.radio-group, .checkbox-group{
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group>label .checkbox-group>label{
+    display:flex;
+    gap: 3px;
+}
+
+.button{
+    margin: auto;
+}
+
+input[type="submit"]{
+    width: 100px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    border-radius: 10px;
 }

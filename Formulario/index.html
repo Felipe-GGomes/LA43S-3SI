@@ -12,100 +12,98 @@
     <div class="container">
         <h2>Formulário Completo</h2>
         <form action="#" method="post">
-            <div>
+            <div class="form-group-1">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome">
             </div>
 
-            <div>
+            <div class="form-group-1">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
-            <div>
+            <div class="form-group-3">
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required>
             </div>
 
-            <div>
+            <div class="form-group-3">
                 <label for="numero">Numero:</label>
                 <input type="number" id="numero" name="numero" required>
             </div>
 
-            <div>
+            <div class="form-group-3">
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" 
-                required 
-                pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$">
+                <input type="tel" id="telefone" name="telefone" required pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$">
             </div>
 
-            <div>
-                <label for="data">Data:</label>
-                <input type="date" id="data" name="data" required>
-            </div>
-
-            <div>
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora" name="hora" required>
-            </div>
-
-            <div>
-                <label for="cor">Cor:</label>
-                <input type="color" id="cor" name="cor" required>
-            </div>
-
-            <div>
-                <label for="nivel satisfação">Nível de Satisfação:</label>
-                <input type="range" id="nivel satisfação" name="nivel satisfação" required>
-            </div>
-
-            <div>
-                <label for="arquivo">Arquivo:</label>
-                <input type="file" id="arquivo" name="arquivo" required>
-            </div>
-
-            <div>
+            <div class="form-group-1">
                 <label for="url">URL:</label>
                 <input type="url" id="url" name="url" required>
             </div>
 
-            <div>
+            <div class="form-group-2">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+
+            <div class="form-group-2">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+
+            <div class="form-group-2">
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor" name="cor" required>
+            </div>
+
+            <div class="form-group-2">
+                <label for="nivel satisfação">Nível de Satisfação:</label>
+                <input type="range" id="nivel satisfação" name="nivel satisfação" required>
+            </div>
+
+            <div class="form-group-2">
+                <label for="arquivo">Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo" required>
+            </div>
+
+            <div class="form-group-2">
                 <label for="genero">Gênero:</label>
-                <div>
-                    <label>
+                <div class="radio-group">
+                    <label class="radio-group">
                         <input type="radio" id="masculino" name="genero" value="masculino" required>
                         Masculino
                     </label>
-                    <label>
+                    <label class="radio-group">
                         <input type="radio" id="feminino" name="genero" value="feminino" required>
                         Feminino
                     </label>
                 </div>
             </div>
 
-            <div>
+            <div class="form-group-1">
                 <label for="interesses">Interesses:</label>
-                <div>
-                    <label>
+                <div class="checkbox-group">
+                    <label class="checkbox-group">
                         <input type="checkbox" id="Technologia" name="Technologia" value="Technologia" required>
                         Tecnologia
-                    </label>
-                    <label>
+                    </label >
+                    <label class="checkbox-group">
                         <input type="checkbox" id="Esportes" name="Esportes" value="Esportes" required>
                         Esportes
                     </label>
-                    <label>
+                    <label class="checkbox-group">
                         <input type="checkbox" id="Musica" name="Musica" value="Musica" required>
                         Música
                     </label>
-                    <label>
+                    <label class="checkbox-group">
                         <input type="checkbox" id="Carros" name="Carros" value="Carros" required>
                         Carros
                     </label>
                 </div>
             </div>
 
-            <div>
+            <div class="form-group-1">
                 <label for="area">Selecione uma opção:</label>
                 <select name="area" id="area">
                     <option value="">Selecione</option>
@@ -115,12 +113,12 @@
                 </select>
             </div>
 
-            <div>
+            <div class="form-group-1">
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="10"></textarea>
             </div>
 
-            <div>
+            <div class ="button">
                 <input type="submit" value="Enviar">
             </div>
 
