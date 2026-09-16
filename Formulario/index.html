@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Formulário Completo</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+
+            <div>
+                <label for="numero">Numero:</label>
+                <input type="number" id="numero" name="numero" required>
+            </div>
+
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" 
+                required 
+                pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$">
+            </div>
+
+            <div>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+
+            <div>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+
+            <div>
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor" name="cor" required>
+            </div>
+
+            <div>
+                <label for="nivel satisfação">Nível de Satisfação:</label>
+                <input type="range" id="nivel satisfação" name="nivel satisfação" required>
+            </div>
+
+            <div>
+                <label for="arquivo">Arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo" required>
+            </div>
+
+            <div>
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" required>
+            </div>
+
+            <div>
+                <label for="genero">Gênero:</label>
+                <div>
+                    <label>
+                        <input type="radio" id="masculino" name="genero" value="masculino" required>
+                        Masculino
+                    </label>
+                    <label>
+                        <input type="radio" id="feminino" name="genero" value="feminino" required>
+                        Feminino
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label for="interesses">Interesses:</label>
+                <div>
+                    <label>
+                        <input type="checkbox" id="Technologia" name="Technologia" value="Technologia" required>
+                        Tecnologia
+                    </label>
+                    <label>
+                        <input type="checkbox" id="Esportes" name="Esportes" value="Esportes" required>
+                        Esportes
+                    </label>
+                    <label>
+                        <input type="checkbox" id="Musica" name="Musica" value="Musica" required>
+                        Música
+                    </label>
+                    <label>
+                        <input type="checkbox" id="Carros" name="Carros" value="Carros" required>
+                        Carros
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label for="area">Selecione uma opção:</label>
+                <select name="area" id="area">
+                    <option value="">Selecione</option>
+                    <option value="opcao1">Prog</option>
+                    <option value="opcao2">Eng Software</option>
+                    <option value="opcao3">Gestão de Projetos</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="10"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
