@@ -7,3 +7,8 @@
 > Campus        : Pato Branco
 
 - Aluno: Felipe Gabriel Gomes
+- O que já foi visto ná matéria:
+  - HTML
+  - CSS
+  - BootStrap
+  - React
